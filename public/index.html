@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quranic Knowledge Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">QA</div>
+        <h1 id="app-title">Quranic Knowledge Assistant</h1>
+        <button id="clear-btn" title="Clear Conversation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"></path>
+            </svg>
+        </button>
+    </header>
+    <main id="chat-container">
+        <div id="chat-box">
+            <div class="message assistant-message">
+                <p>Welcome. I am a strict Quranic data-retrieval assistant. You can ask me questions about the Quran in any language, and I will provide answers based exclusively on verified Quranic verses found in my dataset.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="input-wrapper">
+            <textarea id="user-input" rows="1" placeholder="Ask a question about the Quran... (Shift + Enter for new line)"></textarea>
+            <button id="send-btn" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

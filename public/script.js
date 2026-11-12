@@ -30,7 +30,11 @@ function renderMarkdownToHTML(text) {
 
 function escapeHTML(str) {
     return str.replace(/[&<>'"]/g, tag => ({
-        '&': '&', '<': '<', '>': '>', "'": ''', '"': '"'
+        '&': '&',
+        '<': '<',
+        '>': '>',
+        "'": "'",
+        '"': '"'
     }[tag]));
 }
 
